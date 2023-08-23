@@ -25,7 +25,7 @@ public class ZooValidation {
         }
     }
     public static void isKangarooNotValid(Kangaroo kangaroo) {
-        if (kangaroo.getName() == null || kangaroo.getWeight()<15 || kangaroo.getSleepHour() <2 || kangaroo.getGender().isEmpty() ||(!kangaroo.getGender().equalsIgnoreCase("male")&&!kangaroo.getGender().equalsIgnoreCase("female"))){
+        if (kangaroo.getName() == null || kangaroo.getWeight()<15  || kangaroo.getHeight() <15 || kangaroo.getGender().isEmpty() ||(!kangaroo.getGender().equalsIgnoreCase("male")&&!kangaroo.getGender().equalsIgnoreCase("female"))){
             throw new ZooException("Kangaroo credentials are not valid. Please check again", HttpStatus.BAD_REQUEST);
         }
     }
@@ -42,7 +42,7 @@ public class ZooValidation {
         }
     }
     public static void isKoalaNotValid(Koala koala) {
-        if (koala.getName() == null || koala.getWeight()<5 || koala.getHeight() <15 || koala.getGender().isEmpty() ||(!koala.getGender().equalsIgnoreCase("male")&&!koala.getGender().equalsIgnoreCase("female"))||(!koala.getIsAggressive().equalsIgnoreCase("true")&&!koala.getIsAggressive().equalsIgnoreCase("false"))){
+        if (koala.getName() == null || koala.getWeight()<5|| koala.getGender().isEmpty() || koala.getSleepHour() <2  ||(!koala.getGender().equalsIgnoreCase("male")&&!koala.getGender().equalsIgnoreCase("female"))||(!koala.getIsAggressive().equalsIgnoreCase("true")&&!koala.getIsAggressive().equalsIgnoreCase("false"))){
             throw new ZooException("Koala credentials are not valid. Please check again", HttpStatus.BAD_REQUEST);
         }
     }

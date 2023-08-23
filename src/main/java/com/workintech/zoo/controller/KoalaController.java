@@ -19,6 +19,7 @@ public class KoalaController {
     @PostConstruct
     public void init(){
         koalas = new HashMap<>();
+        //get i bos gelmesin diye kangroos.put(id,kangaroo)
     }
     @GetMapping("/")
     public List<Koala> get(){

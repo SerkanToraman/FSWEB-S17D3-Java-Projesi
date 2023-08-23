@@ -16,8 +16,8 @@ public class Koala {
 
     private int id;
     private  String name;
-    private double height;
     private double weight;
     private String gender;
+    private double sleepHour;
     private String isAggressive;
 }

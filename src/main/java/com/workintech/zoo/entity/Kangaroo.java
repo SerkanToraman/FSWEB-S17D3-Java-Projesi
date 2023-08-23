@@ -13,7 +13,7 @@ public class Kangaroo {
     private int id;
     private  String name;
     private double weight;
-    private double sleepHour;
+    private double height;
     private String gender;
 
 }
