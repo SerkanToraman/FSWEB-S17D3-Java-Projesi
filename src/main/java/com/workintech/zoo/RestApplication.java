@@ -1,4 +1,4 @@
-package com.workintech.S21G3.rest;
+package com.workintech.zoo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
